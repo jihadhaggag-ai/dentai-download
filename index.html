@@ -16,6 +16,7 @@
       padding: 40px;
       border-radius: 12px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      min-width: 300px;
     }
     button {
       background: #112959;
@@ -25,19 +26,35 @@
       font-size: 18px;
       border-radius: 8px;
       cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
   <div class="card">
+    <img src="circle_logo.png" alt="DentAI Logo" style="width:120px; margin-bottom:20px;">
+
     <h1>DentAI</h1>
     <p>Download the Android App</p>
+
     <a href="https://github.com/jihadhaggag-ai/dentai-download/releases/download/v1.0/DentAI_GP_app.apk">
-      <button>Download APK</button>
+      <button style="margin-bottom:18px;">Download APK</button>
     </a>
-    <p style="margin-top:20px;font-size:14px;color:#555;">
-      Allow installation from unknown sources
-    </p>
+
+    <div style="
+      margin-top:15px;
+      padding:12px;
+      background:#e7f3ff;
+      border:1px solid #cfe2ff;
+      border-radius:8px;
+      color:#084298;
+      font-size:14px;
+    ">
+      ℹ️ <strong>Note:</strong> Allow installation from unknown sources
+    </div>
   </div>
 </body>
 </html>
